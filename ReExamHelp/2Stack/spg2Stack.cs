@@ -10,6 +10,7 @@ namespace ReExamHelp._2Stack
     public class spg2Stack
     {
         ColorNode? First { get; set; } = null;
+        public int Length;
 
         public void Push(string color)
         {
@@ -23,6 +24,7 @@ namespace ReExamHelp._2Stack
                 newNode.Next = First;
                 First = newNode;
             }
+            Length++;
         }
 
         public ColorNode? Pop()
@@ -34,6 +36,7 @@ namespace ReExamHelp._2Stack
             ColorNode poppedNode = First;
             First = First.Next;
             poppedNode.Next = null;
+            Length--;
             return poppedNode;
         }
 
@@ -52,6 +55,14 @@ namespace ReExamHelp._2Stack
                 current = current.Next;
             }
             return count;
+        }
+
+        public void nextColor(string color)
+        {
+            while (First != null && First.Color != color)
+            {
+                Pop();
+            }
         }
     }
 }

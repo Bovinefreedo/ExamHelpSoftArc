@@ -10,6 +10,7 @@ namespace ReExamHelp._1Queue
     public class Spg1Queue
     {
         public ColorNode? Head { get; set; } = null;
+        public int Length = 0;
 
         public void Enqueue(string color)
         {
@@ -27,6 +28,7 @@ namespace ReExamHelp._1Queue
                 }
                 current.Next = newNode;
             }
+            Length++;
         }
 
         public ColorNode? Dequeue()
@@ -37,7 +39,7 @@ namespace ReExamHelp._1Queue
             }
             ColorNode dequeuedNode = Head;
             Head = Head.Next;
-            dequeuedNode.Next = null;
+            Length--;
             return dequeuedNode;
         }
 
@@ -56,6 +58,12 @@ namespace ReExamHelp._1Queue
                 current = current.Next;
             }
             return count;
+        }
+
+        public void nextColor(string color) {
+            while ( Head != null && Head.Color != color) {
+                Dequeue();
+            }
         }
     }
 }
