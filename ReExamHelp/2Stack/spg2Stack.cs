@@ -7,7 +7,7 @@ using ReExamHelp.Model;
 
 namespace ReExamHelp._2Stack
 {
-    public class spg2Stack
+    public class Spg2Stack
     {
         ColorNode? First { get; set; } = null;
 
