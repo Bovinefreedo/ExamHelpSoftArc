@@ -64,5 +64,10 @@ namespace ReExamHelp._2Stack
                 Pop();
             }
         }
+
+        public void printList() { 
+        
+        
+        }
     }
 }

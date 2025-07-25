@@ -65,5 +65,18 @@ namespace ReExamHelp._1Queue
                 Dequeue();
             }
         }
+
+        public string printList()
+        {
+            string result = "[";
+            ColorNode? current = Head;
+            while (current != null)
+            {
+                result += $"{current.Color}, ";
+                current = current.Next;
+            }
+            result += "]";
+            return result;
+        }
     }
 }
