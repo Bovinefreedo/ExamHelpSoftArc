@@ -1,17 +1,22 @@
-﻿using ReExamHelp._5CountryArray;
+﻿using ReExamHelp._4IndexedLinkedList;
+using ReExamHelp._5CountryArray;
+using ReExamHelp._6HashTableChaning;
 
-Spg5CountryArray spg5 = new Spg5CountryArray(7);
+Spg6HashTable hashTable = new Spg6HashTable(5);
 
-Console.WriteLine(spg5.printArray());
-spg5.insertCountry(3, "Tyskland");
-Console.WriteLine(spg5.printArray());
-Console.WriteLine(spg5.count);
-spg5.insertCountry(6, "Norge"); 
-spg5.insertCountry(6, "Sverige");
-Console.WriteLine(spg5.printArray());
-Console.WriteLine(spg5.count);
-Console.WriteLine($"Tyskland er i arrayet: {spg5.contains("Tyskland")}");
-spg5.deleteCountry("Tyskland");
-Console.WriteLine(spg5.printArray());
-Console.WriteLine(spg5.count);
-Console.WriteLine($"Tyskland er i arrayet: {spg5.contains("Tyskland")}");
+hashTable.insertNumber(2);
+hashTable.insertNumber(5);
+hashTable.insertNumber(1);
+hashTable.insertNumber(3);
+hashTable.insertNumber(22);
+hashTable.insertNumber(261);
+hashTable.insertNumber(23);
+hashTable.insertNumber(23);
+hashTable.insertNumber(1);
+hashTable.insertNumber(2);
+hashTable.insertNumber(275);
+hashTable.insertNumber(2);
+
+hashTable.printHashTable();
+
+Console.WriteLine(hashTable.contains(2));

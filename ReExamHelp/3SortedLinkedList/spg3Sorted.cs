@@ -37,16 +37,14 @@ namespace ReExamHelp._3SortedLinkedList
             {
                 return false;
             }
-            NumberNode? current = Head.Next;
-            NumberNode? previous = Head;
-            while (current != null)
+            NumberNode? current = Head;
+            while (current.Next != null)
             {
-                if (current.Number == value)
+                if (current.Next.Number == value)
                 {
-                    previous.Next = current.Next;
+                    current.Next = current.Next.Next;
                     return true;
                 }
-                previous = current;
                 current = current.Next;
             }
             return false;
@@ -67,7 +65,7 @@ namespace ReExamHelp._3SortedLinkedList
         public bool contains(int value)
         {
             NumberNode? current = Head;
-            while (current != null)
+            while (current != null && current.Number> value)
             {
                 if (current.Number == value)
                 {
