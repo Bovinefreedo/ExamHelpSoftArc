@@ -26,17 +26,51 @@ namespace ReExamHelp.ONotation
         public bool constainsDuplicates2() {
             List<int> seenNumbers = new();
             for (int i = 0; i < numbers.Length; i++) {
-                for (int j = 0; j < seenNumbers.Count; j++) {
                     if (seenNumbers.Contains(numbers[i])) {
                         return true;
                     }
                     seenNumbers.Add(numbers[i]);
+            }
+            return false;
+        }
+        
+        //O(???)
+        public bool constainsDuplicates3()
+        {
+            List<int> seenNumbers = new();
+            foreach (int i in numbers) {
+                if (seenNumbers.Contains(i))
+                {
+                    return true;
+                }
+                seenNumbers.Add(i);
+            }
+            return false;
+        }
+
+        //O(???)
+        public bool containsDuplicates4() {
+            HashSet<int> seenNumbers = new();
+            foreach (int i in numbers) {
+                if (seenNumbers.Contains(i)) { 
+                    return true;
                 }
             }
             return false;
         }
 
-        
+        //O(???)
+        public bool containsDuplicates5() {
+            Array.Sort(numbers);
+            for(int i = 0; i<numbers.Length-1; i++) {
+                if (numbers[i] == numbers[i + 1]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
 
     }
 }
