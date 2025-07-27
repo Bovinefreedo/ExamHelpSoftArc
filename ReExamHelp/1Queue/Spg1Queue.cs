@@ -78,5 +78,21 @@ namespace ReExamHelp._1Queue
             result += "]";
             return result;
         }
+
+//        Spg1Queue queue = new();
+
+//        queue.Enqueue("Grøn");
+//queue.Enqueue("Grøn");
+//queue.Enqueue("Gul");
+//queue.Enqueue("Grøn");
+//queue.Enqueue("Rød");
+
+//Console.WriteLine(queue.printList());
+//Console.WriteLine(queue.Dequeue().Color);
+//Console.WriteLine(queue.Dequeue().Color);
+//Console.WriteLine(queue.Dequeue().Color);
+//Console.WriteLine(queue.printList());
+//Console.WriteLine(queue.Peek().Color);
+
     }
 }

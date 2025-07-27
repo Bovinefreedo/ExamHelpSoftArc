@@ -26,7 +26,8 @@ namespace ReExamHelp.ONotation
         public bool constainsDuplicates2() {
             List<int> seenNumbers = new();
             for (int i = 0; i < numbers.Length; i++) {
-                    if (seenNumbers.Contains(numbers[i])) {
+                for(int j =0; j<seenNumbers.Count;j++)
+                    if (numbers[i] == seenNumbers[j]) {
                         return true;
                     }
                     seenNumbers.Add(numbers[i]);
