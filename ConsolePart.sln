@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpgTest", "SpgTest\SpgTest.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg11MoviesAPI", "Spg11MoviesAPI\Spg11MoviesAPI.csproj", "{11908D95-3C74-4F0E-9D42-62FD030788CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg12ContractsAPI", "Spg12ContractsAPI\Spg12ContractsAPI.csproj", "{0DDDB79E-5136-4783-B015-BF34DCCB4948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{11908D95-3C74-4F0E-9D42-62FD030788CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11908D95-3C74-4F0E-9D42-62FD030788CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11908D95-3C74-4F0E-9D42-62FD030788CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DDDB79E-5136-4783-B015-BF34DCCB4948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDDB79E-5136-4783-B015-BF34DCCB4948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDDB79E-5136-4783-B015-BF34DCCB4948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDDB79E-5136-4783-B015-BF34DCCB4948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
