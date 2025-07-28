@@ -12,6 +12,13 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 List<Movie> movies = new();
+movies.Add(new Movie
+{
+    id = 0,
+    title = "Ghost Busters",
+    year = 1987,
+    genres = new List<string> { "Action", "Comedy", "Si-Fi" }
+});
 
 app.MapGet("/api/movies", () => movies);
 app.MapGet("/api/movies/{id}", (int id) => movies.FirstOrDefault(m => id == m.id));
@@ -40,7 +47,7 @@ app.MapPut("/api/movies/{id}", (int id, MovieData updatedData) => {
     }
 });
 app.MapDelete("/api/movies/{id}", (int id) => movies.RemoveAll(m => m.id == id));
-app.MapGet("/api/movies/genre/{genre}", (string genre) => {
+app.MapGet("/api/movies/genres/{genre}", (string genre) => {
     List<Movie> m = movies.Where(m => m.genres.Contains(genre)).ToList();
     return Results.Ok(m);
 });

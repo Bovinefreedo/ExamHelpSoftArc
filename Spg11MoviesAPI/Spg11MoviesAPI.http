@@ -1,6 +1,0 @@
-@Spg11MoviesAPI_HostAddress = http://localhost:5115
-
-GET {{Spg11MoviesAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
