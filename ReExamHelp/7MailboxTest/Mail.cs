@@ -13,8 +13,11 @@ namespace ReExamHelp._7MailboxTest
         public string message { get; set; } = string.Empty;
         public bool read { get; set; }
 
-        public Mail(int id, string sender, string message, bool read) { 
-        
+        public Mail(int id, string sender, string message) {
+            this.id = id;
+            this.sender = sender;
+            this.message = message;
+            read = false;
         }
     }
 }

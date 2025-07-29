@@ -1,5 +1,6 @@
-﻿using ReExamHelp._1Queue;
-using ReExamHelp._4IndexedLinkedList;
-using ReExamHelp._5CountryArray;
-using ReExamHelp._6HashTableChaning;
+﻿using System;
+using ReExamHelp._7MailboxTest;
+using ReExamHelp.Andet;
+using ReExamHelp.Model;
 
+Console.WriteLine("I also hate you");

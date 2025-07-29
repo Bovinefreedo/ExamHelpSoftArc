@@ -5,13 +5,15 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReExamHelp", "ReExamHelp\ReExamHelp.csproj", "{7F671AAD-77B9-4604-91BF-EEB6405945AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpgTest", "SpgTest\SpgTest.csproj", "{9988FB08-289E-4071-AB8E-B279B426CA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpgTest", "SpgTest\SpgTest.csproj", "{9988FB08-289E-4071-AB8E-B279B426CA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg11MoviesAPI", "Spg11MoviesAPI\Spg11MoviesAPI.csproj", "{11908D95-3C74-4F0E-9D42-62FD030788CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg11MoviesAPI", "Spg11MoviesAPI\Spg11MoviesAPI.csproj", "{11908D95-3C74-4F0E-9D42-62FD030788CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg12ContractsAPI", "Spg12ContractsAPI\Spg12ContractsAPI.csproj", "{0DDDB79E-5136-4783-B015-BF34DCCB4948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg12ContractsAPI", "Spg12ContractsAPI\Spg12ContractsAPI.csproj", "{0DDDB79E-5136-4783-B015-BF34DCCB4948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg13Pets", "Spg13Pets\Spg13Pets.csproj", "{96FF0CC2-1E6C-474C-882E-40A75FA9F9DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg13Pets", "Spg13Pets\Spg13Pets.csproj", "{96FF0CC2-1E6C-474C-882E-40A75FA9F9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg9BibliotekEF", "Spg9BibliotekEF\Spg9BibliotekEF.csproj", "{F09E6E15-25C0-4810-8CBB-187364195531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{96FF0CC2-1E6C-474C-882E-40A75FA9F9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96FF0CC2-1E6C-474C-882E-40A75FA9F9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96FF0CC2-1E6C-474C-882E-40A75FA9F9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09E6E15-25C0-4810-8CBB-187364195531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09E6E15-25C0-4810-8CBB-187364195531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09E6E15-25C0-4810-8CBB-187364195531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09E6E15-25C0-4810-8CBB-187364195531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
