@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg13Pets", "Spg13Pets\Spg1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg9BibliotekEF", "Spg9BibliotekEF\Spg9BibliotekEF.csproj", "{F09E6E15-25C0-4810-8CBB-187364195531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureAPI", "SecureAPI\SecureAPI.csproj", "{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F09E6E15-25C0-4810-8CBB-187364195531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09E6E15-25C0-4810-8CBB-187364195531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09E6E15-25C0-4810-8CBB-187364195531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

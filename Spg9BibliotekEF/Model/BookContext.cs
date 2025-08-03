@@ -10,7 +10,8 @@ namespace Spg9BibliotekEF.Model
 
         public BookContext()
         {
-            DbPath = "bin/Books.db";
+            //Find din lokale database hvor den er blevet oprettet og skriv stien!!
+            DbPath = "C:\\Users\\hotso\\source\\repos\\ExamHelpSoftArc\\Spg9BibliotekEF\\bin\\Books.db";
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

@@ -8,7 +8,7 @@ namespace Spg9BibliotekEF.Model
 {
     public class Author
     {
-        public long AuthorId { get; set; }
+        public int AuthorId { get; set; }
         public string name { get; set; } = "Unknown";
         public int age { get; set; }
 
