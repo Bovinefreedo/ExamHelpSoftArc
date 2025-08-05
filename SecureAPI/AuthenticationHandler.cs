@@ -79,11 +79,12 @@ namespace SecureAPI
                         credentials.TryGetValue("user", out var username) &&
                         credentials.TryGetValue("password", out var password))
                     {
+                        
                         if (users.ContainsKey(username) && users[username].HashedPassword == PasswordHasher.hashPassword(password, users[username].Salt))
                         {
                             List<Claim> claims = new();
                             foreach (string role in users[username].Role) {
-                                claims.Add(new Claim("role", role));
+                                claims.Add(new Claim("Role", role));
                             }
                             var identity = new ClaimsIdentity(claims, "DummyAuthentication");
                             var principal = new ClaimsPrincipal(identity);
@@ -93,6 +94,7 @@ namespace SecureAPI
                         }
                         else
                         {
+                            Console.WriteLine($"username: {username}, Password: {password}");
                             return Task.FromResult(AuthenticateResult.Fail("Invalid username or password"));
                         }
                     }
