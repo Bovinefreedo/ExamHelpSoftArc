@@ -14,31 +14,35 @@ contracts.Add(new Contract(2, "Lene", 18000, "deltid"));
 contracts.Add(new Contract(3, "Poul", 18400, "deltid"));
 contracts.Add(new Contract(4, "Peter", 20200, "senior"));
 
-app.MapGet("/api/contracts", () => contracts );
+app.MapGet("/api/contracts", () => contracts);
 app.MapGet("/api/contracts/{id}", (int id) => contracts.FirstOrDefault(c => c.id == id));
 app.MapPost("/api/contracts", (ContractData data) => contracts.Add(
-    new Contract((contracts[contracts.Count-1].id+1), data.employeeName, data.salary, data.type)
+    new Contract((contracts[contracts.Count - 1].id + 1), data.employeeName, data.salary, data.type)
     ));
-app.MapPut("/api/contracts/{id}", (int id, ContractData data) => {
+app.MapPut("/api/contracts/{id}", (int id, ContractData data) =>
+{
     Contract c = contracts.FirstOrDefault(c => c.id == id);
     if (c == null)
     {
         return Results.BadRequest();
     }
-    else {
+    else
+    {
         c.employeeName = data.employeeName;
         c.salary = data.salary;
         c.type = data.type;
         return Results.Ok();
     }
 });
-app.MapDelete("/api/contracts/{id}", (int id) => {
+app.MapDelete("/api/contracts/{id}", (int id) =>
+{
     Contract c = contracts.FirstOrDefault(c => c.id == id);
     if (c != null)
     {
         return Results.BadRequest();
     }
-    else {
+    else
+    {
         contracts.RemoveAll(c => c.id == id);
         return Results.Ok();
     }
@@ -46,9 +50,15 @@ app.MapDelete("/api/contracts/{id}", (int id) => {
 app.MapGet("/api/contracts/type/{type}", (string type) => contracts.Where(c => c.type == type));
 
 
+// Contract ole = new Contract { id = 1, employeeName = "Ole", salary = 20000, type = "Fastansat" };
+Contract Sussanne = new Contract(2,"Sussanne",40000,"Deltid");
+
+contracts.Add(Sussanne);
+
 app.Run();
 
-public class Contract { 
+public class Contract
+{
     public int id { get; set; }
     public string employeeName { get; set; }
     public int salary { get; set; }
@@ -61,5 +71,5 @@ public class Contract {
         this.salary = salary;
         this.type = type;
     }
-} 
+}
 public record ContractData(string employeeName, int salary, string type);
