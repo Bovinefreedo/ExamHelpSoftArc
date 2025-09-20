@@ -44,8 +44,6 @@ using (var db = new BookContext()) {
         Year = 2003,
         Author = a0
     };
-
-
     db.Authors.RemoveRange(db.Authors);
     db.Books.RemoveRange(db.Books);
 
@@ -65,4 +63,11 @@ using (var db = new BookContext()) {
     foreach (var book in b) {
         Console.WriteLine($"{book.Title} : by {book.Author.name}");
     }
+
+    List<Book> list1 = db.Books.Include("Author").Where(x => x.Author.name == "Terry Pratchet").ToList();
+
+    foreach (var book in list1)
+    {
+        Console.WriteLine($"{book.Title} : by {book.Author.name}");
+    }   
 }

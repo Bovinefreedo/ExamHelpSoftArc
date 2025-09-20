@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg9BibliotekEF", "Spg9Bibl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureAPI", "SecureAPI\SecureAPI.csproj", "{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBookEF", "CookBookEF\CookBookEF.csproj", "{F2940E56-BCF5-4E48-B3CF-0F8393D1FBD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56B55B3E-FABF-4414-8E8D-A0DDD19B62E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2940E56-BCF5-4E48-B3CF-0F8393D1FBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2940E56-BCF5-4E48-B3CF-0F8393D1FBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2940E56-BCF5-4E48-B3CF-0F8393D1FBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2940E56-BCF5-4E48-B3CF-0F8393D1FBD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
