@@ -1,0 +1,6 @@
+@SpgBorgerForslag_HostAddress = http://localhost:5096
+
+GET {{SpgBorgerForslag_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
