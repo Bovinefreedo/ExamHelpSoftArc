@@ -11,6 +11,8 @@ namespace Spg9BibliotekEF.Model
         public int AuthorId { get; set; }
         public string name { get; set; } = "Unknown";
         public int age { get; set; }
+        public List<Book> Books { get; set; } = new List<Book>();
+
 
         public Author() { }
     }
